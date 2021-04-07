@@ -232,7 +232,103 @@ nav {
 
 /* NAVIGATION AREA END */
 
+/*  COLLECTION SECTION */
+.collection-section {
+  background-image: url("../img/bg-1.jpg");
+  background-size: cover;
+}
+.grid-of-two-column {
+  display: grid;
+  grid-template-columns: 53% 47%;
+}
+.colletion-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.colletion-text p {
+  text-transform: uppercase;
+  color: #565656;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2.8px;
+  font-weight: 600;
+}
 
+/* PRODUCT SECTION */
+.grid-of-3-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+.product {
+  position: relative;
+}
+.featured-product.product-icons {
+  top: 74%;
+}
+.product-icons {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 69%;
+  width: 100%;
+}
+.product-icons .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  opacity: 0;
+}
+.product:hover .product-icons .icon {
+  opacity: 1;
+  transform: translateY(-3rem);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transform: translateY(-3rem);
+  -moz-transform: translateY(-3rem);
+  -ms-transform: translateY(-3rem);
+  -o-transform: translateY(-3rem);
+}
+.product-icons .icon:hover {
+  color: #fff;
+  background-color: #ff5353;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.product-icons .icon i {
+  color: black;
+  margin-top: 1.7rem;
+}
+.product-icons .icon:hover i {
+  color: #fff;
+}
+.product-discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  margin-top: 2rem;
+}
+.product-discription span i {
+  color: #ff5353;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 
 
 
