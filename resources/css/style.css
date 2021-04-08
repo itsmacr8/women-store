@@ -519,6 +519,131 @@ nav {
 
 /* MEDIA QUERY */
 
-.this-is-new-css {
-  color: #fff;
-}
+@media only screen and (max-width: 992px) {
+    header.container{
+      padding: 2% 8% 2% 6%;
+    }
+    .navigation-area.container{
+      padding: 2% 8% 2% 6%;
+    }
+    .hamberger-menu{
+        display: block;
+      }
+    .navigation-items{
+        display: none;
+    }
+    .navigation-items li{
+      padding: 1rem;
+    }
+    .main-title {
+      font-size: 4rem;
+    }
+    .btn{
+      font-size: 1.4rem;
+      margin-top: 3rem;
+    }
+    .sub-menu {
+      width: 15rem;
+      top: 24%;
+      left: 42%;
+    }
+    .sub-menu li {
+      padding: 0;
+    }
+    .sub-menu li a {
+      padding: 1rem 2rem;
+    }
+
+    .product-icons {
+        top: 58%;
+    }
+    .featured-product.product-icons {
+        top: 66%;
+    }
+    .product-icons .icon {
+    width: 4rem;
+    height: 4rem;
+    }
+    .product-icons .icon i {
+    margin-top: 1.2rem;
+    }
+    .post-catagory a:first-child {
+        display: block;
+        margin-bottom: .5rem;
+    }
+    .footer-section ul li {
+      margin: 2.3rem 0;
+    }
+    .footer-links .stores {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .social-icon a{
+        margin-right: .4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .grid-of-4-column{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-title {
+      font-size: 3.3rem;
+    }
+    .featured-product.product-icons {
+        top: 62%;
+    }
+    .product-icons {
+        top: 74%;
+    }
+    .footer-links .stores {
+      flex-direction: row;
+    }
+    .footer-section ul li {
+      margin: 1rem 0;
+    }
+    .journal-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    html{
+      font-size: 8px;
+    }
+  .header-area{
+        display: none;
+    }
+    .sub-menu {
+      top: 27%;
+      left: 37%;
+    }
+    .sub-menu li a {
+      padding: .5rem 2rem;
+    }
+    .navigation-items li {
+      padding: .5rem;
+    }
+    .grid-of-two-column,.grid-of-3-column,.grid-of-4-column{
+        grid-template-columns: 1fr;
+    }  
+    .featured-product.product-icons {
+        top: 75%;
+    }
+    .footer-section .grid-of-4-column {
+        text-align: center;
+    }
+    .colletion-text{
+      padding: 5rem 0;
+      order: 2;
+    }
+    .main-title {
+      font-size: 3rem;
+    }
+    .section-title {
+      font-size: 2.5rem;
+    }
+    .footer-links .stores {
+      justify-content: center;
+    }
+  }
