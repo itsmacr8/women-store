@@ -330,14 +330,41 @@ nav {
   cursor: pointer;
 }
 
+/* DISCOUNT SECTION */
+.discount-section {
+  background: #eae2d8;
+}
+.discount-section .main-title {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.second-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
 
-
-
-
+/* POPULAR SECTION */
 .grid-of-4-column {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
+}
+.service {
+  text-align: center;
+  border: 1px solid #e1e1e1cf;
+  padding: 4rem 0;
+}
+.service img {
+  width: 25%;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.service i {
+  margin-bottom: 2rem;
+}
+.popular.grid-of-4-column {
+  margin-bottom: 7rem;
 }
 
 
