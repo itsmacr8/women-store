@@ -5,19 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Simple women e-commerce store</title>
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- RESOURCES FILES -->
+    <title>Silon: Women e-commerce store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
 <body>
     <section id="home" class="home-section">
-        <header class="container header-area">
+        <header class="header-area">
             <div class="contact-information">
                 <span>Phone: +01 256 25 235</span>
                 <span>email: info@eiser.com</span>
@@ -28,12 +23,12 @@
                 <span>language</span>
             </div>
         </header>
-        <div class="container navigation-area">
+        <div class="navigation-area">
             <nav id="navbar" class="navbar">
                 <div class="menu-brand" style="z-index: 1;">
                     <img src="resources/img/logo.png" alt="">
                 </div>
-                <div class="hamberger-menu">
+                <div class="hamburger-menu">
                     <div class="menu-line"></div>
                     <div class="menu-line"></div>
                     <div class="menu-line"></div>
@@ -41,19 +36,17 @@
                 <ul class="navigation-items">
                     <li><a id="show-sub-menu" href="#">home<i style="margin-left: .5rem;"
                                 class="fas fa-angle-down"></i></a>
-                        <div>
-                            <ul id="sub-menu" class="sub-menu">
-                                <li><a href="#">home 1</a></li>
-                                <li><a href="#">home 2</a></li>
-                                <li><a href="#">home 3</a></li>
-                            </ul>
-                        </div>
+                        <ul id="sub-menu" class="sub-menu">
+                            <li><a href="#">home 1</a></li>
+                            <li><a href="#">home 2</a></li>
+                            <li><a href="#">home 3</a></li>
+                        </ul>
                     </li>
-                    <li onclick="removeHambergerMenu();"><a href="#services">services</a></li>
-                    <li onclick="removeHambergerMenu();"><a href="#projects">projects</a></li>
-                    <li onclick="removeHambergerMenu();"><a href="#blog">blog</a></li>
-                    <li onclick="removeHambergerMenu();"><a href="#about">about</a></li>
-                    <li onclick="removeHambergerMenu();"><a href="#footer">contact</a></li>
+                    <li onclick="removeHamburgerMenu();"><a href="#services">services</a></li>
+                    <li onclick="removeHamburgerMenu();"><a href="#projects">projects</a></li>
+                    <li onclick="removeHamburgerMenu();"><a href="#blog">blog</a></li>
+                    <li onclick="removeHamburgerMenu();"><a href="#about">about</a></li>
+                    <li onclick="removeHamburgerMenu();"><a href="#footer">contact</a></li>
                 </ul>
                 <div class="user-shopping-icon">
                     <a href="#" class="icon"><i class="fas fa-search"></i></a>
@@ -67,10 +60,9 @@
             </nav>
         </div>
     </section>
-
     <section id="collection" class="collection-section">
-        <div class="grid-of-two-column">
-            <div class="colletion-text">
+        <div class="grid-of-two-column container">
+            <div class="collection-text">
                 <p>ultimate collection</p>
                 <h1 class="main-title">Complete Women Fashion Here</h1>
                 <button class="btn">shop now</button>
@@ -80,12 +72,11 @@
             </div>
         </div>
     </section>
-        
     <section id="product" class="product-section">
-        <div>
+        <div class="container">
             <h2 class="section-title">Featured product</h2>
         </div>
-        <div class="grid-of-3-column">
+        <div class="grid-of-3-column container">
             <div class="product">
                 <div class="product-picture">
                     <img src="resources/img/1.jpg" alt="dress">
@@ -151,10 +142,9 @@
             </div>
         </div>
     </section>
-
     <section id="discount" class="discount-section">
-        <div class="grid-of-two-column">
-            <div class="colletion-text">
+        <div class="grid-of-two-column container">
+            <div class="collection-text">
                 <h2 class="main-title">50% off</h2>
                 <h2 class="second-title">all women’s collection</h2>
                 <button class="btn">shop now</button>
@@ -164,12 +154,11 @@
             </div>
         </div>
     </section>
-        
     <section id="popular" class="popular-section">
         <div>
             <h2 class="section-title">Most popular</h2>
         </div>
-        <div class="popular grid-of-4-column">
+        <div class="popular grid-of-4-column container">
             <div class="product">
                 <div class="product-picture">
                     <img src="resources/img/4.jpg" alt="dress">
@@ -255,7 +244,7 @@
                 </div>
             </div>
         </div>
-        <div id="services" class="grid-of-4-column">
+        <div id="services" class="grid-of-4-column container">
             <div class="service">
                 <img src="resources/img/money.png" alt="">
                 <h2 class="service-and-footer-heading">Money back gurantee</h2>
@@ -278,12 +267,11 @@
             </div>
         </div>
     </section>
-
     <section id="trending" class="trending-section">
         <div>
             <h2 class="section-title">Trending products</h2>
         </div>
-        <div class="grid-of-4-column">
+        <div class="grid-of-4-column container">
             <div class="product">
                 <div class="product-picture">
                     <img src="resources/img/8.jpg" alt="dress">
@@ -454,12 +442,11 @@
             </div>
         </div>
     </section>
-
     <section id="blog" class="journal-section">
         <div>
-            <h2 class="section-title">silon journal</h2>
+            <h2 class="section-title">Silon journal</h2>
         </div>
-        <div class="grid-of-3-column">
+        <div class="grid-of-3-column container">
             <div class="product">
                 <div>
                     <img src="resources/img/16.jpg" alt="dress">
@@ -468,7 +455,7 @@
                     <a class="journal-post-date" href="#">07 July, 2019</a>
                     <a class="journal-title" href="#">Were divided land his creature which have evening subdue</a>
                 </div>
-                <div class="post-catagory">
+                <div class="post-category">
                     <a href="#" class="icon"><i class="fab fa-sketch"></i><span class="about-post">Women
                             Fashion</span></a>
                     <a href="#" class="icon"><i class="far fa-comment-alt"></i><span class="about-post">2
@@ -483,7 +470,7 @@
                     <a class="journal-post-date" href="#">07 July, 2019</a>
                     <a class="journal-title" href="#">Were divided land his creature which have evening subdue</a>
                 </div>
-                <div class="post-catagory">
+                <div class="post-category">
                     <a href="#" class="icon"><i class="fab fa-sketch"></i><span class="about-post">Women
                             Fashion</span></a>
                     <a href="#" class="icon"><i class="far fa-comment-alt"></i><span class="about-post">2
@@ -498,22 +485,20 @@
                     <a class="journal-post-date" href="#">07 July, 2019</a>
                     <a class="journal-title" href="#">Were divided land his creature which have evening subdue</a>
                 </div>
-                <div class="post-catagory">
+                <div class="post-category">
                     <a href="#" class="icon"><i class="fab fa-sketch"></i><span class="about-post">Women
                             Fashion</span></a>
                     <a href="#" class="icon"><i class="far fa-comment-alt"></i><span class="about-post">2
                             Comments</span></a>
                 </div>
             </div>
-    
         </div>
     </section>
-        
     <section id="follow" class="follow-section">
         <div>
             <h2 class="section-title">follow us</h2>
         </div>
-        <div class="grid-of-4-column">
+        <div class="grid-of-4-column container">
             <div class="product">
                 <a href="#" class="follow-image"><img src="resources/img/19.jpg" alt="dress"></a>
                 <div class="follow product-icons">
@@ -540,9 +525,8 @@
             </div>
         </div>
     </section>
-
     <footer id="footer" class="footer-section">
-        <div class="grid-of-4-column">
+        <div class="grid-of-4-column container">
             <div>
                 <h2 class="service-and-footer-heading">About us</h2>
                 <ul>
@@ -579,13 +563,13 @@
             <div class="footer-links">
                 <h2 class="service-and-footer-heading">experience app on mobile</h2>
                 <div class="stores">
-                    <a href="#" class="goole app-store-flex">
+                    <a href="#" class="google app-store-flex">
                         <div>
                             <i class="fab fa-sketch"></i>
                         </div>
                         <div>
                             <span class="get-the-app">get it on</span>
-                            <p class="store-name">goole play</p>
+                            <p class="store-name">google play</p>
                         </div>
                     </a>
                     <a href="#" class="apple app-store-flex">
@@ -610,13 +594,10 @@
             </div>
         </div>
         <div class="copyright">
-            <span>Copyright &copy; 2021</span><a href="#">themeies.com.</a><span>All rights reserved.</span>
+            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script></span><a href="https://itsmac.netlify.app/">ITS MAC</a><span>All rights reserved.</span>
         </div>
     </footer>
-
-    <!-- JS SCRIPTS -->
     <script src="resources/js/main.js"></script>
-
 </body>
 
 </html>

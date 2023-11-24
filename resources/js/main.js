@@ -1,4 +1,4 @@
-const toggleButton = document.querySelector('.hamberger-menu');
+const toggleButton = document.querySelector('.hamburger-menu');
 const navigationItems = document.querySelector('.navigation-items');
 const showSubMenu = document.getElementById('show-sub-menu')
 const SubMenu = document.getElementById('sub-menu');
@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
     navigationItems.classList.toggle('active');
 });
 
-function removeHambergerMenu() {
+function removeHamburgerMenu() {
     navigationItems.classList.remove("active");
 }
 
